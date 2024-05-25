@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rock paper siccors</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 90vh;
+        background-color: brown;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .cPoint {
+        font-size: 30px;
+        color: white;
+      }
+      .pPoint {
+        font-size: 30px;
+        color: white;
+      }
+      .computer {
+        font-size: 30px;
+        color: white;
+      }
+      .player {
+        font-size: 30px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game">
+      <p class="cPoint">computer:0</p>
+      <p class="pPoint">player:0</p>
+      <img
+        src="https://wrpsa.com/wp-content/uploads/2021/08/scissors.png"
+        onclick="play('scissors')"
+      />
+      <img
+        src="https://wrpsa.com/wp-content/uploads/2021/08/rock.png"
+        onclick="play('rock')"
+      />
+      <img
+        src="https://wrpsa.com/wp-content/uploads/2021/08/paper.png"
+        onclick="play('paper')"
+      />
+      <p class="computer">computer choice</p>
+      <p class="player">player choice</p>
+      <p class="winner">winner</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
